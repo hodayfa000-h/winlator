@@ -24,7 +24,11 @@ android {
     namespace 'com.winlator.cmod'
 
     compileSdk 34
-
+    sourceSets {
+    main {
+        assets.srcDirs = ['src/main/assets_empty']
+    }
+}
     defaultConfig {
         applicationId "com.winlator.cmod"
         minSdkVersion 26
@@ -106,6 +110,7 @@ dependencies {
     implementation 'com.google.android.flexbox:flexbox:3.0.0'
     implementation 'com.google.android.material:material:1.6.1'
 }
+
 
 
 
